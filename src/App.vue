@@ -415,11 +415,6 @@ function volverSinCalificar(servicio) {
         </p>
       </div>
       <button class="boton-nuevo" @click="abrirModalNuevo">
-          
-        
-        
-        2
-        
         + Nuevo servicio
       </button>
     </div>
