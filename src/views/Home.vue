@@ -1,7 +1,9 @@
 <template>
   <q-page class="page">
     <div class="contenido">
-      <q-icon name="eco" size="64px" color="primary" />
+       <q-avatar>
+            <img :src="senaLogo" alt="Logo SENA">
+          </q-avatar>
       <h1 class="titulo">¡Bienvenido!</h1>
       <p class="texto">
         Consulta desde el menú lateral la información de los servicios del
@@ -13,9 +15,14 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import senaLogo from '../assets/images/sena.jpeg'
+
 </script>
 
 <style scoped>
+
+
 .page {
   display: flex;
   align-items: center;
