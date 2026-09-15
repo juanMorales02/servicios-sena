@@ -21,7 +21,7 @@
           <q-item-section avatar>
             <div class="nav-icon"><q-icon name="home" /></div>
           </q-item-section>
-          <q-item-section>Inicio</q-item-section>
+          <q-item-section>Acerca</q-item-section>
         </q-item>
 
         <q-item clickable v-ripple="{ color: 'primary' }" active-class="item-activo" to="/enfermeria">
@@ -59,14 +59,9 @@
           <q-item-section>Coordinación</q-item-section>
         </q-item>
 
-        <q-separator class="nav-sep" />
-
-        <q-item clickable v-ripple="{ color: 'primary' }" active-class="item-activo" to="/acerca">
-          <q-item-section avatar>
-            <div class="nav-icon"><q-icon name="info" /></div>
-          </q-item-section>
-          <q-item-section>Acerca de</q-item-section>
-        </q-item>
+      
+           
+       
       </q-list>
     </q-drawer>
 
