@@ -14,56 +14,56 @@
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" side="left" bordered>
-      <q-list>
-        <q-item-label header>Servicios</q-item-label>
+      <q-list class="nav-list">
+        <q-item-label header class="nav-label">Servicios</q-item-label>
 
         <q-item clickable v-ripple="{ color: 'primary' }" active-class="item-activo" to="/" exact>
           <q-item-section avatar>
-            <q-icon name="home" />
+            <div class="nav-icon"><q-icon name="home" /></div>
           </q-item-section>
           <q-item-section>Inicio</q-item-section>
         </q-item>
 
         <q-item clickable v-ripple="{ color: 'primary' }" active-class="item-activo" to="/enfermeria">
           <q-item-section avatar>
-            <q-icon name="medical_services" />
+            <div class="nav-icon"><q-icon name="medical_services" /></div>
           </q-item-section>
           <q-item-section>Enfermería</q-item-section>
         </q-item>
 
         <q-item clickable v-ripple="{ color: 'primary' }" active-class="item-activo" to="/bienestar">
           <q-item-section avatar>
-            <q-icon name="spa" />
+            <div class="nav-icon"><q-icon name="spa" /></div>
           </q-item-section>
           <q-item-section>Bienestar</q-item-section>
         </q-item>
 
         <q-item clickable v-ripple="{ color: 'primary' }" active-class="item-activo" to="/biblioteca">
           <q-item-section avatar>
-            <q-icon name="menu_book" />
+            <div class="nav-icon"><q-icon name="menu_book" /></div>
           </q-item-section>
           <q-item-section>Biblioteca</q-item-section>
         </q-item>
 
         <q-item clickable v-ripple="{ color: 'primary' }" active-class="item-activo" to="/cafeteria">
           <q-item-section avatar>
-            <q-icon name="restaurant" />
+            <div class="nav-icon"><q-icon name="restaurant" /></div>
           </q-item-section>
           <q-item-section>Cafetería</q-item-section>
         </q-item>
 
         <q-item clickable v-ripple="{ color: 'primary' }" active-class="item-activo" to="/coordinacion">
           <q-item-section avatar>
-            <q-icon name="badge" />
+            <div class="nav-icon"><q-icon name="badge" /></div>
           </q-item-section>
           <q-item-section>Coordinación</q-item-section>
         </q-item>
 
-        <q-separator />
+        <q-separator class="nav-sep" />
 
         <q-item clickable v-ripple="{ color: 'primary' }" active-class="item-activo" to="/acerca">
           <q-item-section avatar>
-            <q-icon name="info" />
+            <div class="nav-icon"><q-icon name="info" /></div>
           </q-item-section>
           <q-item-section>Acerca de</q-item-section>
         </q-item>

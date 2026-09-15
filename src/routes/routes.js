@@ -8,7 +8,7 @@ import Acerca from "../views/Acerca.vue"
 import { createRouter, createWebHashHistory } from "vue-router"
 
 const routes = [
-    { path: "/", component: Home, name: "home" },
+    { path: "/", component: Home, name: "Home" },
     { path: "/enfermeria", component: Enfermeria, name: "enfermeria" },
     { path: "/bienestar", component: Bienestar, name: "bienestar" },
     { path: "/biblioteca", component: Biblioteca, name: "biblioteca" },

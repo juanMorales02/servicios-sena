@@ -1,7 +1,7 @@
 
-/* Cabecera con el verde institucional del SENA */
+/* Cabecera con el verde institucional del SENA, un poco más oscuro y con profundidad */
 .bg-sena-green {
-  background-color: #39a900 !important;
+  background: linear-gradient(115deg, #2f7d00 0%, #1c5200 100%) !important;
 }
 
 .q-toolbar-title .q-avatar {
@@ -16,28 +16,59 @@
   padding: 2px;
 }
 
-/* Estados hover y seleccionado del menú lateral, en verde SENA */
+/* Lista de navegación */
+.nav-list {
+  padding: 8px 10px;
+}
+.nav-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  padding-left: 6px;
+}
+.nav-sep {
+  margin: 10px 6px;
+}
+
+/* Insignia circular de cada ícono */
+.nav-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #eef1ee;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+/* Estados hover y seleccionado del menú lateral, en verde SENA (más oscuro) */
 .q-drawer .q-item {
   color: #3c3c3c;
   border-radius: 0 24px 24px 0;
   margin: 2px 6px 2px 0;
 }
 
-.q-drawer .q-item:hover {
-  background-color: rgba(57, 169, 0, 0.1);
-  color: #39a900;
+.q-drawer .q-item:hover .nav-icon {
+  background-color: rgba(31, 82, 0, 0.14);
+  color: #1c5200;
 }
 
-.q-drawer .q-item:hover .q-icon {
-  color: #39a900;
+.q-drawer .q-item:hover {
+  color: #1c5200;
 }
 
 .q-drawer .q-item.item-activo {
-  background-color: rgba(57, 169, 0, 0.16);
-  color: #39a900;
-  font-weight: 600;
+  background-color: rgba(31, 82, 0, 0.10);
+  color: #1c5200;
+  font-weight: 700;
 }
 
-.q-drawer .q-item.item-activo .q-icon {
-  color: #39a900;
+.q-drawer .q-item.item-activo .nav-icon {
+  background: linear-gradient(135deg, #2f7d00, #1c5200);
+  color: #fff;
 }
+
